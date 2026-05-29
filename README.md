@@ -42,10 +42,10 @@ Defensive Web Scraper: If the product is missing from the database, an automated
 Optimized Feature Layer: Re-engineered text vectorization using TfidfVectorizer capped at 3,000 max features with ngram_range=(1, 2) to capture contextual phrase pairs (e.g., "not good").
 
  Model Benchmarking & Performance
-During the development phase, a benchmarking pipeline was built to evaluate three algorithms (Multinomial Naive Bayes, Logistic Regression, and Linear Support Vector Machine). The Linear SVM delivered the most robust boundary separation and was selected for production inference.
+During the development phase, a benchmarking pipeline was built to evaluate three algorithms (Multinomial Naive Bayes, Logistic Regression, and Linear Support Vector Machine). The Multinomial Naive Bayes delivered the most robust boundary separation and was selected for production inference.
 
- Production Classifier Performance (Linear SVM)
-The model achieves an outstanding overall accuracy of 88.32% on unseen testing data:
+ Production Classifier Performance (Multinomial Naive Bayes)
+The model achieves an outstanding overall accuracy of 89.42% on unseen testing data:
 
 ========================================
 Overall Accuracy: 89.42%
